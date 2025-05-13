@@ -207,7 +207,7 @@ function swingSword() {
 function enemyAI() {
     const distance = Math.abs(characterX - enemyX);
 
-    if (distance <= 200) {
+    if (distance <= 0) {
         enemyFollowing = true;
     } else if (distance > 1000) {
         enemyFollowing = false;
